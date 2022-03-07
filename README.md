@@ -1,3 +1,3 @@
-We use interface as type-annotations for objects.
+Introducing Error-2 : Flipping arguments for a function.
 
-and Fixing bugs at run-time using ts
+Defining type annotations for function parameters will throw an error before execution

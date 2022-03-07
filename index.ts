@@ -13,7 +13,11 @@ axios.get(url).then((response) => {
   const title = data.title;
   const completed = data.completed;
 
+  logData(id, title, completed);
+});
+
+function logData(id: number, title: string, completed: boolean) {
   console.log(`
   A Todo with ID: ${id} ,title: ${title} and status: ${completed}
   `);
-});
+}
