@@ -2,6 +2,12 @@ import React, { useState } from "react";
 
 function GuestList(): JSX.Element | null {
   const [name, setName] = useState("");
+  const [guests, setGuests] = useState<string[]>([]);
+
+  const onClick = () => {
+    setName("");
+    setGuests([...guests, name]);
+  };
 
   return (
     <div>
@@ -11,7 +17,7 @@ function GuestList(): JSX.Element | null {
         value={name}
         onChange={(e) => setName(e.target.value)}
       />
-      <button>Add Name</button>
+      <button onClick={onClick}>Add Name</button>
     </div>
   );
 }
