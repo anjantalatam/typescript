@@ -5,9 +5,16 @@ const EventComponent: React.FC = () => {
     console.log(event);
   };
 
+  const handleDrag = (e: React.DragEvent<HTMLDivElement>) => {
+    console.log("Dragged", e);
+  };
+
   return (
     <div>
       <input onChange={onChange} />
+      <div draggable onDragStart={handleDrag}>
+        Drag me!
+      </div>
     </div>
   );
 };
