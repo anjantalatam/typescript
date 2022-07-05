@@ -1,5 +1,11 @@
-## Examples of Types
+## Variables Annotations
 
-1. Typescript interprets the type from the value assigned to a variable
-2. If we try to access properties/ methods that are not present on that type `Type Script` throws an error.
-   Ex: today.abcdef -> throws an error as Date type doesn't have property abcdef
+1. With type annotation, we are saying TS that we are ever gonna assign type number to fruits.
+
+2. If we assign any other type, typescript throws an error.
+
+3. Type annotations can be used on any other type of value as well like instance of a class, built in object
+
+```Javascript
+ const now: Date = new Date()
+```
