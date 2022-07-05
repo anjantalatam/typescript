@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 interface User {
   name: string;
@@ -15,6 +15,10 @@ function UserSearch(): JSX.Element | null {
   const inputRef = useRef<HTMLInputElement | null>(null);
   const [search, setSearch] = useState("");
   const [user, setUser] = useState<User | undefined>();
+
+  useEffect(() => {
+    inputRef.current && inputRef.current.focus();
+  }, []);
 
   const searchGuest = () => {
     setUser(users.filter((user) => user.name === search)?.[0]);
