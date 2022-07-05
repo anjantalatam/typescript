@@ -1,7 +1,7 @@
 {
   "name": "fetchjson",
   "version": "1.0.0",
-  "description": "Practice app - Typescript tutorila",
+  "description": "Practice app - Typescript tutorils",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
